@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 message += `- ${item.name} (${item.weight} غرام)%0a`;
             });
 
-            const phoneNumber = "96181079758";
+            const phoneNumber = "96171244216";
             const url = `https://wa.me/${phoneNumber}?text=${message}`;
 
             window.open(url, '_blank');
