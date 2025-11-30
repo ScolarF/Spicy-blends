@@ -124,12 +124,33 @@ document.addEventListener('DOMContentLoaded', function () {
             selectedBaseWeight = parseInt(this.getAttribute('data-weight'));
 
             modalSpiceName.textContent = selectedSpice;
+
+            // Update weight buttons with prices
+            weightBtns.forEach(btn => {
+                const weight = parseInt(btn.dataset.weight);
+                const price = Math.round((selectedBasePrice / selectedBaseWeight) * weight);
+                const formattedPrice = price.toLocaleString() + ' L.L.';
+
+                // Store original text if not already stored
+                if (!btn.dataset.originalText) {
+                    btn.dataset.originalText = btn.textContent.trim();
+                }
+
+                // Clear button and rebuild with price
+                const originalText = btn.dataset.originalText;
+                btn.innerHTML = `${originalText}<span class="weight-price">${formattedPrice}</span>`;
+            });
+
             weightModal.classList.add('show');
 
             // Reset selection
             selectedWeight = null;
             weightBtns.forEach(btn => btn.classList.remove('selected'));
             if (customWeightInput) customWeightInput.value = '';
+
+            // Clear custom weight price display
+            const customWeightPriceEl = document.getElementById('custom-weight-price');
+            if (customWeightPriceEl) customWeightPriceEl.textContent = '';
         });
 
         // Enhanced hover tracking for cursor-based invert effect
@@ -392,6 +413,24 @@ document.addEventListener('DOMContentLoaded', function () {
             if (this.value) {
                 weightBtns.forEach(b => b.classList.remove('selected'));
                 selectedWeight = this.value;
+
+                // Calculate and display price for custom weight
+                const customWeight = parseInt(this.value);
+                const customWeightPriceEl = document.getElementById('custom-weight-price');
+
+                if (customWeight && customWeight > 0 && selectedBasePrice && selectedBaseWeight) {
+                    const price = Math.round((selectedBasePrice / selectedBaseWeight) * customWeight);
+                    const formattedPrice = price.toLocaleString() + ' L.L.';
+                    customWeightPriceEl.textContent = formattedPrice;
+                } else {
+                    customWeightPriceEl.textContent = '';
+                }
+            } else {
+                // Clear the price display when input is empty
+                const customWeightPriceEl = document.getElementById('custom-weight-price');
+                if (customWeightPriceEl) {
+                    customWeightPriceEl.textContent = '';
+                }
             }
         });
     }

@@ -745,6 +745,19 @@ body {
     font-weight: bold;
 }
 
+.weight-btn .weight-price {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-gold);
+    margin-top: 4px;
+}
+
+.weight-btn:hover .weight-price,
+.weight-btn.selected .weight-price {
+    color: var(--color-black);
+}
+
+
 .custom-weight input {
     width: 100%;
     padding: 12px;
@@ -1082,6 +1095,7 @@ body {
 .spice-4 {
     filter: drop-shadow(0 0 40px rgba(255, 184, 77, 0.5)) brightness(1.1);
 }
+
 /* ==================================== FOOTER ==================================== */
 .footer,
 .main-footer {
