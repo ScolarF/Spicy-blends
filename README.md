@@ -42,7 +42,6 @@ Open `index.html` in your browser - that's it! No build process required.
 spicy-blends/
 ├── index.html              # Main HTML file
 ├── style.css              # Main stylesheet
-├── style_responsive.css   # Mobile/responsive styles
 ├── script.js              # JavaScript functionality
 ├── products_data.js       # Product inventory (75 items)
 └── images/                # Spice illustrations
@@ -67,3 +66,4 @@ spicy-blends/
 ---
 
 **Designed & Developed by Scolar** with ❤️ and spices ✨
+
