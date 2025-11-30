@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سبايسي بلندز - Spicy Blends</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_responsive.css">
+    <link rel="stylesheet" href="style.css?v=4">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header -->
     <header class="main-header">
         <div class="header-content">
             <div class="logo">
@@ -153,6 +152,14 @@
                 <p id="empty-cart-msg">السلة فارغة</p>
                 <ul id="cart-items"></ul>
             </div>
+
+            <!-- Total Price Section -->
+            <div id="cart-total-section"
+                style="margin: 15px 0; padding: 10px; border-top: 1px solid var(--color-gold); border-bottom: 1px solid var(--color-gold); display: flex; justify-content: space-between; align-items: center; font-weight: bold;">
+                <span>المجموع:</span>
+                <span id="cart-total-price" style="color: var(--color-gold); font-size: 1.2rem;">0 L.L.</span>
+            </div>
+
             <div class="cart-actions">
                 <button id="send-whatsapp-btn" class="action-btn whatsapp-btn">
                     <span>إرسال الطلب</span>
@@ -169,10 +176,16 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="display: block !important; z-index: 100; position: relative;">
         <div class="footer-content">
-            <p class="copyright">© 2025 سبايسي بلندز - Spicy Blends. جميع الحقوق محفوظة.</p>
-            <p class="credits">صُمم وطُور بواسطة <span class="designer-name">Scolar</span></p>
+            <p class="copyright">© 2025 سبايسي بلندز - Spicy Blends. All Rights Reserved.</p>
+            <p class="credits">
+                Designed & Developed by <span class="designer-name">Scolar</span>
+                <br>
+                <a href="https://wa.me/96181079758" target="_blank"
+                    style="color: var(--color-gold); text-decoration: none; margin-top: 5px; display: inline-block;">81
+                    079 758</a>
+            </p>
         </div>
     </footer>
 
