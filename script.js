@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
             card.className = 'price-card';
             card.id = `product-${product.id}`;
             card.setAttribute('data-category', product.category);
+            card.setAttribute('data-price', product.price);
+            card.setAttribute('data-weight', parseInt(product.weight)); // Store base weight as number
 
             // Determine display price (using the raw string from file)
             // Format: 350000 -> 350,000 L.L. (optional formatting)
@@ -104,6 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let selectedSpice = null;
     let selectedWeight = null;
+    let selectedBasePrice = 0;
+    let selectedBaseWeight = 0;
 
     priceCards.forEach(card => {
         // Add click effect & Open Modal
@@ -116,6 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Open Modal Logic
             selectedSpice = this.querySelector('.spice-name').textContent;
+            selectedBasePrice = parseInt(this.getAttribute('data-price'));
+            selectedBaseWeight = parseInt(this.getAttribute('data-weight'));
+
             modalSpiceName.textContent = selectedSpice;
             weightModal.classList.add('show');
 
@@ -397,13 +404,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            const item = {
-                id: Date.now(),
-                name: selectedSpice,
-                weight: selectedWeight
-            };
+            // Calculate price
+            const weightVal = parseInt(selectedWeight);
+            const price = Math.round((selectedBasePrice / selectedBaseWeight) * weightVal);
 
-            cart.push(item);
+            // Check if item exists
+            const existingItem = cart.find(item => item.name === selectedSpice && item.weight === selectedWeight);
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+                existingItem.totalPrice += price;
+            } else {
+                const item = {
+                    id: Date.now(),
+                    name: selectedSpice,
+                    weight: selectedWeight,
+                    unitPrice: price,
+                    totalPrice: price,
+                    quantity: 1
+                };
+                cart.push(item);
+            }
+
             updateCartUI();
             closeAllModals();
 
@@ -415,27 +437,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update Cart UI
     function updateCartUI() {
-        if (cartCount) cartCount.textContent = cart.length;
+        // Calculate total items count (sum of quantities)
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        if (cartCount) cartCount.textContent = totalItems;
 
         // Update Cart List
         if (cartItemsList) {
             cartItemsList.innerHTML = '';
+            let total = 0;
+
             if (cart.length === 0) {
                 if (emptyCartMsg) emptyCartMsg.style.display = 'block';
             } else {
                 if (emptyCartMsg) emptyCartMsg.style.display = 'none';
                 cart.forEach(item => {
+                    total += item.totalPrice;
+                    const formattedItemPrice = item.totalPrice.toLocaleString();
+
                     const li = document.createElement('li');
                     li.className = 'cart-item';
                     li.innerHTML = `
                         <div class="cart-item-details">
-                            <span class="cart-item-name">${item.name}</span>
-                            <span class="cart-item-weight">${item.weight} غرام</span>
+                            <span class="cart-item-name">${item.name} <span style="font-size: 0.8em; color: var(--color-white); opacity: 0.7;">(x${item.quantity})</span></span>
+                            <span class="cart-item-weight">${item.weight} غرام - ${formattedItemPrice} L.L.</span>
                         </div>
                         <span class="cart-item-remove" onclick="removeCartItem(${item.id})">&times;</span>
                     `;
                     cartItemsList.appendChild(li);
                 });
+            }
+
+            // Update Total Price Display
+            const totalPriceEl = document.getElementById('cart-total-price');
+            if (totalPriceEl) {
+                totalPriceEl.textContent = total.toLocaleString() + ' L.L.';
             }
         }
     }
@@ -470,11 +505,16 @@ document.addEventListener('DOMContentLoaded', function () {
             if (cart.length === 0) return;
 
             let message = "مرحبا، أريد طلب التوابل التالية:%0a";
+            let total = 0;
+
             cart.forEach(item => {
-                message += `- ${item.name} (${item.weight} غرام)%0a`;
+                total += item.totalPrice;
+                message += `- ${item.name} (x${item.quantity}) (${item.weight} غرام) - ${item.totalPrice.toLocaleString()} L.L.%0a`;
             });
 
-            const phoneNumber = "96171244216";
+            message += `%0aالمجموع: ${total.toLocaleString()} L.L.`;
+
+            const phoneNumber = "96181079758"; // Updated phone number
             const url = `https://wa.me/${phoneNumber}?text=${message}`;
 
             window.open(url, '_blank');
