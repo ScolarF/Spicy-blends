@@ -7,7 +7,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@ const products = [
         "weight": "200g",
         "image": "images/chili_powder.png",
         "category": "other",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 3,
@@ -27,7 +27,7 @@ const products = [
         "weight": "200g",
         "image": "images/chili_powder.png",
         "category": "other",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 6,
@@ -57,7 +57,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 7,
@@ -87,7 +87,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "ground",
-        "description": "200g - 250000"
+        "description": "200g(وقية) - 250000"
     },
     {
         "id": 10,
@@ -97,7 +97,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 11,
@@ -107,7 +107,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 12,
@@ -117,7 +117,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 13,
@@ -127,7 +127,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 14,
@@ -137,7 +137,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 15,
@@ -147,7 +147,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 16,
@@ -157,7 +157,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 17,
@@ -167,7 +167,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 18,
@@ -177,7 +177,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 19,
@@ -187,7 +187,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 20,
@@ -197,7 +197,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 21,
@@ -207,7 +207,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 22,
@@ -217,7 +217,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 23,
@@ -227,7 +227,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 24,
@@ -237,7 +237,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 25,
@@ -247,7 +247,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 26,
@@ -257,7 +257,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 27,
@@ -267,7 +267,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 28,
@@ -277,7 +277,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 29,
@@ -287,7 +287,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 30,
@@ -297,7 +297,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 31,
@@ -307,7 +307,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 32,
@@ -317,7 +317,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 33,
@@ -327,7 +327,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 34,
@@ -337,7 +337,7 @@ const products = [
         "weight": "200g",
         "image": "images/chili_powder.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 35,
@@ -347,7 +347,7 @@ const products = [
         "weight": "200g",
         "image": "images/chili_powder.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 36,
@@ -357,7 +357,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 37,
@@ -367,7 +367,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "ground",
-        "description": "200g - 250000"
+        "description": "200g(وقية) - 250000"
     },
     {
         "id": 38,
@@ -377,7 +377,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 600000"
+        "description": "200g(وقية) - 600000"
     },
     {
         "id": 39,
@@ -387,7 +387,7 @@ const products = [
         "weight": "1000g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "1000g - 250000"
+        "description": "1000g(وقية) - 250000"
     },
     {
         "id": 40,
@@ -397,7 +397,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 150000"
+        "description": "200g(وقية) - 150000"
     },
     {
         "id": 41,
@@ -407,7 +407,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 150000"
+        "description": "200g(وقية) - 150000"
     },
     {
         "id": 42,
@@ -417,7 +417,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 43,
@@ -427,7 +427,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 44,
@@ -437,7 +437,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 45,
@@ -447,7 +447,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 46,
@@ -457,7 +457,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 47,
@@ -467,7 +467,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 48,
@@ -477,7 +477,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 49,
@@ -487,7 +487,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "ground",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 50,
@@ -497,7 +497,7 @@ const products = [
         "weight": "200g",
         "image": "images/star_anise_cinnamon.png",
         "category": "whole",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 51,
@@ -507,7 +507,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "blends",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 52,
@@ -517,7 +517,7 @@ const products = [
         "weight": "200g",
         "image": "images/saffron.png",
         "category": "other",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     },
     {
         "id": 53,
@@ -527,7 +527,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 400000"
+        "description": "200g(وقية) - 400000"
     },
     {
         "id": 54,
@@ -537,7 +537,7 @@ const products = [
         "weight": "200g",
         "image": "images/star_anise_cinnamon.png",
         "category": "whole",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     },
     {
         "id": 55,
@@ -547,7 +547,7 @@ const products = [
         "weight": "200g",
         "image": "images/star_anise_cinnamon.png",
         "category": "whole",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     },
     {
         "id": 56,
@@ -557,7 +557,7 @@ const products = [
         "weight": "200g",
         "image": "images/star_anise_cinnamon.png",
         "category": "ground",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     },
     {
         "id": 57,
@@ -567,7 +567,7 @@ const products = [
         "weight": "200g",
         "image": "images/cloves.png",
         "category": "whole",
-        "description": "200g - 500000"
+        "description": "200g(وقية) - 500000"
     },
     {
         "id": 58,
@@ -577,7 +577,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 500000"
+        "description": "200g(وقية) - 500000"
     },
     {
         "id": 59,
@@ -587,7 +587,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 60,
@@ -597,7 +597,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "ground",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     },
     {
         "id": 61,
@@ -617,7 +617,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 63,
@@ -627,7 +627,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 64,
@@ -637,7 +637,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "ground",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 65,
@@ -647,7 +647,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 150000"
+        "description": "200g(وقية) - 150000"
     },
     {
         "id": 66,
@@ -657,7 +657,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "ground",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 67,
@@ -667,7 +667,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     },
     {
         "id": 68,
@@ -677,7 +677,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "ground",
-        "description": "200g - 350000"
+        "description": "200g(وقية) - 350000"
     },
     {
         "id": 69,
@@ -687,7 +687,7 @@ const products = [
         "weight": "200g",
         "image": "images/star_anise_cinnamon.png",
         "category": "whole",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     },
     {
         "id": 70,
@@ -707,7 +707,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 150000"
+        "description": "200g(وقية) - 150000"
     },
     {
         "id": 72,
@@ -717,7 +717,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "other",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 73,
@@ -727,7 +727,7 @@ const products = [
         "weight": "200g",
         "image": "images/mortar_pestle.png",
         "category": "whole",
-        "description": "200g - 200000"
+        "description": "200g(وقية) - 200000"
     },
     {
         "id": 74,
@@ -737,7 +737,7 @@ const products = [
         "weight": "200g",
         "image": "images/star_anise_cinnamon.png",
         "category": "whole",
-        "description": "200g - 250000"
+        "description": "200g(وقية) - 250000"
     },
     {
         "id": 75,
@@ -747,6 +747,6 @@ const products = [
         "weight": "200g",
         "image": "images/star_anise_cinnamon.png",
         "category": "ground",
-        "description": "200g - 300000"
+        "description": "200g(وقية) - 300000"
     }
 ];
