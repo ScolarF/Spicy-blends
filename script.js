@@ -514,7 +514,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             message += `%0aالمجموع: ${total.toLocaleString()} L.L.`;
 
-            const phoneNumber = "96181079758"; // Updated phone number
+            const phoneNumber = "96171244216"; // Updated phone number
             const url = `https://wa.me/${phoneNumber}?text=${message}`;
 
             window.open(url, '_blank');
